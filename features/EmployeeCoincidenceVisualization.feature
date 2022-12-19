@@ -19,9 +19,10 @@
     ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00\n
     ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
     """
+    When the employee coincidence is computed
     Then the application must return the following coincidences
     """
-    ASTRID-RENE: 2
-    ASTRID-ANDRES: 3
+    ASTRID-RENE: 2\n
+    ASTRID-ANDRES: 3\n
     RENE-ANDRES: 2
     """
