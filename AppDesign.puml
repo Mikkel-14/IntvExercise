@@ -1,0 +1,22 @@
+@startuml
+
+abstract class File{
+ path:string
+ parse_algorithm
+ get_contents()
+ parse()
+}
+
+abstract class Parser{
+parse()
+}
+
+class PlainTextFile
+class PlainTextParser
+
+Parser <-- File
+File <|-- PlainTextFile
+Parser <|-- PlainTextParser
+
+
+@enduml
