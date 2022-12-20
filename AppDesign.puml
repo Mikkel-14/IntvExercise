@@ -11,12 +11,30 @@ abstract class Parser{
 parse()
 }
 
+class EmployeeRoster{
+compute_coincident_employees()
+}
+
+abstract class OutPutter{
+format(data)
+}
+
+class StringOutPutter{}
+
 class PlainTextFile
 class PlainTextParser
+
+abstract class PairGenerator{
+generate()
+}
+
+class EmployeePairGenerator
 
 Parser <-- File
 File <|-- PlainTextFile
 Parser <|-- PlainTextParser
-
+OutPutter <|-- StringOutPutter
+EmployeeRoster ..> PairGenerator
+PairGenerator <|-- EmployeePairGenerator
 
 @enduml
