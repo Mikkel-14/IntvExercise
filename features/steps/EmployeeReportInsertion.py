@@ -1,4 +1,5 @@
 from behave import *
+from MainApp.StartApp import main
 use_step_matcher("parse")
 
 
