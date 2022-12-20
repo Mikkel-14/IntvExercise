@@ -11,7 +11,7 @@
     Scenario: A file with incorrect format was attached
       Given that the manager attached a file that doesn't have the employees data
       When the application starts
-      Then the error message: "Unreconized format" will be shown
+      Then the error message: "Unrecognized format" will be shown
 
     Scenario: A file was attached with correct data
       Given that the manager attached a file
