@@ -57,7 +57,7 @@ def step_impl(context):
     :type context: behave.runner.Context
     """
     expected_result = {
-        "RENE": [(10.15, 12), (10, 12), (None, None), (13, 13.25), (None, None), (14, 18), (20, 21)],
-        "ASTRID": [(10, 12), (None, None), (None, None), (12, 14), (None, None), (None, None), (20, 21)]
+        "RENE": [(10.25, 12.0), (10.0, 12.0), (None, None), (13.0, 13.25), (None, None), (14.0, 18.0), (20.0, 21.0)],
+        "ASTRID": [(10.0, 12.0), (None, None), (None, None), (12.0, 14.0), (None, None), (None, None), (20.0, 21.0)]
     }
-    assert context.r_value is expected_result
+    assert context.r_value == expected_result
