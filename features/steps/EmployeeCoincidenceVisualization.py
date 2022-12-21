@@ -23,7 +23,7 @@ def step_impl(context):
     """
     :type context: behave.runner.Context
     """
-    context.coincidences = EmployeeRoster(context.employee_info).compute_coincident_employees(EmployeePairGenerator)
+    context.coincidences = EmployeeRoster(context.employee_info).compute_coincident_employees(EmployeePairGenerator())
 
 
 @then('the application should return the message: "No coincident employees were found!"')
@@ -42,4 +42,4 @@ def step_impl(context):
     :type context: behave.runner.Context
     """
     actual = StringOutPutter().format(context.coincidences)
-    assert context.text == actual
+    assert context.text.strip('\r') == actual

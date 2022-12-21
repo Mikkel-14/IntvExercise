@@ -22,7 +22,5 @@
     When the employee coincidence is computed
     Then the application must return the following coincidences
     """
-    ASTRID-RENE: 2
-    ASTRID-ANDRES: 3
-    RENE-ANDRES: 2
+    RENE-ASTRID: 2,RENE-ANDRES: 2,ASTRID-ANDRES: 3
     """
